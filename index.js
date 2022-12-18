@@ -27,7 +27,9 @@ app.get('/', (req, res)=>{
     res.json(data)
 })
 
-app.get('/users', (req, res)=>{
+
+
+app.route('/users').get((req, res)=>{
     res.json(data.users)
 })
 
